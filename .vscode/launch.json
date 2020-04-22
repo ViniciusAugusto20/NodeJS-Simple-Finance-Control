@@ -6,12 +6,16 @@
   "configurations": [
     {
       "type": "node",
-      "request": "attach",
-      "protocol": "inspector",
+      "request": "attach", // Launch ele sempre esta olhando.
+      "protocol": "inspector", // Inspeciona
       "restart": true,
-      "name": "Debug",
-      "skipFiles": ["<node_internals>/**"],
-      "outFiles": ["${workspaceFolder}/**/*.js"]
+      "name": "debug",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "outFiles": [
+        "${workspaceFolder}/**/*.js"
+      ]
     }
   ]
 }
